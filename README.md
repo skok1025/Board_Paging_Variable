@@ -30,6 +30,6 @@
 
 
 #### start_content = current_page * page_contents_size - page_contents_size + 1 
-// 컨텐츠 시작
+// 컨텐츠 시작 인덱스
 
 ==============================================
