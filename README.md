@@ -7,7 +7,7 @@
 |**page_contents_size**|<pre>한 페이지에 들어가는 글 갯수</pre>||
 |**list_num** = ceil(current_page/list_size)|<pre>페이지 리스트 순서</pre>|<pre> "< 1 2 3 4 5 >" 이면 페이지 리스트 순서는 1번째, "< 6 7 8 9 10 >" 이면 페이지 리스트 순서는 2번째</pre>|
 |**nowStart** = (list_num * list_size) - list_size + 1|<pre>현재 페이지 리스트의 시작 페이지</pre>|<pre>"< 6 7 8 9 10 >" 이면 현재 페이지 리스트의 시작 페이지는 6</pre>|
-|**nowEnd** = list_num * list_size|<pre>현재 페이지 리스트의 마지막 페이지</pre>|"< 6 7 8 9 10 >" 이면 현재 페이지 리스트의  페이지는 10</pre>|
+|**nowEnd** = list_num * list_size|<pre>현재 페이지 리스트의 마지막 페이지</pre>|<pre>"< 6 7 8 9 10 >" 이면 현재 페이지 리스트의  페이지는 10</pre>|
 |**next_page** = 1 + list_size * list_num|<pre>현재 페이지 리스트의 다음 페이지 (다음 페이지 리스트의 첫번째 페이지)</pre>|<pre> 현재 페이지리스트가 "< 6 7 8 9 10 >" 이면 다음 페이지는 11 </pre>|
 |**prev_page** = (double)currunt_page/list_size < 1 ? 1 : next_page-list_size-1|<pre>현재 페이지 리스트의 이전 페이지 (이전 페이지 리스트의 마지막 페이지)</pre>|<pre> 현재 페이지리스트가 "< 11 12 13 14 15 >" 이면 이전 페이지는 10 </pre>|
 |**start_listnum** = list_size * list_num - list_size + 1|<pre>첫번째 페이지번호</pre>||
