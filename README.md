@@ -4,13 +4,13 @@
 |:------|---|
 |**curruntPage**|__*view 페이지에서 사용*__<br> - 현재 페이지 <br> <pre> 페이징 모습이 "< 1 **2** 3 4 5 >" 인 경우 현재 페이지는 2</pre>|
 |**list_size**|- 페이지 리스트 크기 <br> <pre> 페이징 모습이 "< 1 2 3 4 5 >" 인 경우 페이지 리스트 크기는 5</pre>|
-|**list_num** <br> = ceil(curruntPage/list_size)|- 페이지 리스트 순서 <br> <pre> "< 1 2 3 4 5 >" 이면 페이지 리스트 순서는 1번째, "< 6 7 8 9 10 >" 이면 페이지 리스트 순서는 2번째</pre>|
-|**nowStart** <br> =  (list_num * list_size) - list_size + 1|__*view 페이지에서 사용*__ <br> - 현재 페이지 리스트의 시작 페이지 <br> <pre>"< 6 7 8 9 10 >" 이면 현재 페이지 리스트의 시작 페이지는 6</pre>|
-|**nowEnd** <br> =  (list_num * list_size)|__*view 페이지에서 사용*__<br> - 현재 페이지 리스트의 마지막 페이지 <br> <pre>"< 6 7 8 9 10 >" 이면 현재 페이지 리스트의  페이지는 10</pre>|
-|**nextPage** <br> =  (list_size * list_num) + 1|__*view 페이지에서 사용*__<br> - 현재 페이지 리스트의 다음 페이지 (다음 페이지 리스트의 첫번째 페이지) <br> <pre> 현재 페이지리스트가 "< 6 7 8 9 10 >" 이면 다음 페이지는 11 </pre>|
-|**prevPage** <br> =  list_num == 1 ? 1 : (list_size * list_num)-list_size|__*view 페이지에서 사용*__ <br> - 현재 페이지 리스트의 이전 페이지 (이전 페이지 리스트의 마지막 페이지) <br> <pre> 현재 페이지리스트가 "< 11 12 13 14 15 >" 이면 이전 페이지는 10 </pre>|
+|**list_num** <br> <pre>= ceil(curruntPage/list_size) </pre>|- 페이지 리스트 순서 <br> <pre> "< 1 2 3 4 5 >" 이면 페이지 리스트 순서는 1번째, "< 6 7 8 9 10 >" 이면 페이지 리스트 순서는 2번째</pre>|
+|**nowStart** <br> <pre>=  (list_num * list_size) - list_size + 1</pre>|__*view 페이지에서 사용*__ <br> - 현재 페이지 리스트의 시작 페이지 <br> <pre>"< 6 7 8 9 10 >" 이면 현재 페이지 리스트의 시작 페이지는 6</pre>|
+|**nowEnd** <br> <pre>=  (list_num * list_size)</pre>|__*view 페이지에서 사용*__<br> - 현재 페이지 리스트의 마지막 페이지 <br> <pre>"< 6 7 8 9 10 >" 이면 현재 페이지 리스트의  페이지는 10</pre>|
+|**nextPage** <br> <pre>=  (list_size * list_num) + 1</pre>|__*view 페이지에서 사용*__<br> - 현재 페이지 리스트의 다음 페이지 (다음 페이지 리스트의 첫번째 페이지) <br> <pre> 현재 페이지리스트가 "< 6 7 8 9 10 >" 이면 다음 페이지는 11 </pre>|
+|**prevPage** <br> <pre>=  (list_num == 1) ? 1 : (list_size * list_num)-list_size</pre>|__*view 페이지에서 사용*__ <br> - 현재 페이지 리스트의 이전 페이지 (이전 페이지 리스트의 마지막 페이지) <br> <pre> 현재 페이지리스트가 "< 11 12 13 14 15 >" 이면 이전 페이지는 10 </pre>|
 |**page_contents_size**|__*DB SELECT 시 사용*__<br> - 한 페이지에 들어가는 글 갯수|
-|**start_content** <br> =  (current_page * page_contents_size) - page_contents_size + 1|__*DB SELECT 시 사용*__<br> - 컨텐츠 시작 인덱스|
+|**start_content** <br> <pre>=  (currentPage * page_contents_size) - page_contents_size + 1</pre>|__*DB SELECT 시 사용*__<br> - 컨텐츠 시작 인덱스|
 
 # 사용법
 
