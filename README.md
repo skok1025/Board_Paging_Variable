@@ -9,8 +9,6 @@
 |**nowEnd** <br> =  list_num * list_size|__*view 페이지에서 사용*__<pre>현재 페이지 리스트의 마지막 페이지</pre>|<pre>"< 6 7 8 9 10 >" 이면 현재 페이지 리스트의  페이지는 10</pre>|
 |**nextPage** <br> =  1 + list_size * list_num|__*view 페이지에서 사용*__<pre>현재 페이지 리스트의 다음 페이지 (다음 페이지 리스트의 첫번째 페이지)</pre>|<pre> 현재 페이지리스트가 "< 6 7 8 9 10 >" 이면 다음 페이지는 11 </pre>|
 |**prevPage** <br> =  (double)curruntPage/list_size < 1 ? 1 : next_page-list_size-1|__*view 페이지에서 사용*__<pre>현재 페이지 리스트의 이전 페이지 (이전 페이지 리스트의 마지막 페이지)</pre>|<pre> 현재 페이지리스트가 "< 11 12 13 14 15 >" 이면 이전 페이지는 10 </pre>|
-|**start_listnum** <br> =  list_size * list_num - list_size + 1|<pre>첫번째 페이지번호</pre>||
-|**last_listnum** <br> =  start_listnum +list_size - 1|<pre>마지막 페이지번호</pre>||
 |**page_contents_size**|__*DB SELECT 시 사용*__<pre>한 페이지에 들어가는 글 갯수</pre>||
 |**start_content** <br> =  current_page * page_contents_size - page_contents_size + 1|__*DB SELECT 시 사용*__<pre>컨텐츠 시작 인덱스</pre>||
 
