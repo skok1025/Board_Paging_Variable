@@ -10,8 +10,7 @@
 |**nextPage** <br> <pre>=(list_size*list_num)+1</pre>|__*view 페이지에서 사용*__<br> - 현재 페이지 리스트의 다음 페이지 (다음 페이지 리스트의 첫번째 페이지) <br> <pre> 현재 페이지리스트가 "< 6 7 8 9 10 >" 이면 다음 페이지는 11 </pre>|
 |**prevPage** <br> <pre>=(list_num == 1)?1 <br>:(list_size * list_num)-list_size</pre>|__*view 페이지에서 사용*__ <br> - 현재 페이지 리스트의 이전 페이지 (이전 페이지 리스트의 마지막 페이지) <br> <pre> 현재 페이지리스트가 "< 11 12 13 14 15 >" 이면 이전 페이지는 10 </pre>|
 |**page_contents_size**|__*DB SELECT 시 사용*__<br> - 한 페이지에 들어가는 글 갯수|
-|**start_content** <br> <pre>=(currentPage - 1) * page_contents_size
-</pre>|__*DB SELECT 시 사용*__<br> - 컨텐츠 시작 인덱스|
+|**start_content** <br> <pre>=(currentPage - 1) * page_contents_size</pre>|__*DB SELECT 시 사용*__<br> - 컨텐츠 시작 인덱스|
 
 # 사용법
 
