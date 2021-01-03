@@ -2,7 +2,7 @@
 
 |PagingFrontUtil.java 의 변수|역할|예시|
 |:------|---|------|
-|**curruntPage**|__*view 페이지에서 사용*__<pre>현재 페이지</pre>|<pre> 페이징 모습이 "< 1 **2** 3 4 5 >" 인 경우 현재 페이지는 2</pre>|
+|**curruntPage**|__*view 페이지에서 사용*__<br>현재 페이지|<pre> 페이징 모습이 "< 1 **2** 3 4 5 >" 인 경우 현재 페이지는 2</pre>|
 |**list_size**|<pre>페이지 리스트 크기</pre>| <pre> 페이징 모습이 "< 1 2 3 4 5 >" 인 경우 페이지 리스트 크기는 5</pre> |
 |**list_num** <br> = ceil(curruntPage/list_size)|<pre>페이지 리스트 순서</pre>|<pre> "< 1 2 3 4 5 >" 이면 페이지 리스트 순서는 1번째, "< 6 7 8 9 10 >" 이면 페이지 리스트 순서는 2번째</pre>|
 |**nowStart** <br> =  (list_num * list_size) - list_size + 1|__*view 페이지에서 사용*__<pre>현재 페이지 리스트의 시작 페이지</pre>|<pre>"< 6 7 8 9 10 >" 이면 현재 페이지 리스트의 시작 페이지는 6</pre>|
