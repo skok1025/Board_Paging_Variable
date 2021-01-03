@@ -12,11 +12,13 @@
 |last_listnum = start_listnum +list_size - 1|<pre>마지막 페이지번호</pre>||
 |start_content = current_page * page_contents_size - page_contents_size + 1|<pre>컨텐츠 시작 인덱스</pre>||
 
-사용법
+# 사용법
+
+## view 노출방법
 > PagingFrontUtil.java 의 getPagingVariable 함수의 리턴값을 paging_view.jsp 와 같이 뷰에 노출시켜주면 됩니다.
 >> https://github.com/skok1025/Board_Paging_Variable/blob/master/paging_view.jsp
 
-DB SELECT 쿼리 예시
+## DB 에서 정보 가져오기 (SELECT 쿼리)
 > <code>LIMIT #{page_contents_size} OFFSET #{start_content}</code>
 >> #{start_content} 인덱스부터 #{page_contents_size} 개의 정보를 가져온다. 
 >> https://github.com/skok1025/Board_Paging_Variable/blob/master/db_mybatis.xml
