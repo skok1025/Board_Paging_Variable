@@ -1,7 +1,7 @@
 
 
 |PagingFrontUtil.java 의 변수|역할|
-|:------:|---|
+|:------|---|
 |currunt_page|현재 페이지|
 |list_size|페이지 리스트 크기|
 |page_contents_size|한 페이지에 들어가는 글 갯수|
