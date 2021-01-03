@@ -20,5 +20,5 @@
 
 ## DB 에서 정보 가져오기 (SELECT 쿼리)
 > <code>LIMIT #{page_contents_size} OFFSET #{start_content}</code>
->> #{start_content} 인덱스부터 #{page_contents_size} 개의 정보를 가져온다. 
+>> #{start_content = "컨텐츠 시작 인덱스"} 인덱스부터 #{page_contents_size = "한 페이지에 들어가는 글 갯수"} 개의 정보를 가져온다. 
 >> https://github.com/skok1025/Board_Paging_Variable/blob/master/db_mybatis.xml
