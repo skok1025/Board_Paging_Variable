@@ -1,7 +1,7 @@
 
 
 |PagingFrontUtil.java 의 변수|역할|예시|
-|:------|------|------|
+|:------|---|------|
 |currunt_page|<pre>현재 페이지</pre>|<pre> 페이징 모습이 "< 1 **2** 3 4 5 >" 인 경우 현재 페이지는 2</pre>|
 |list_size|<pre>페이지 리스트 크기</pre>| <pre> 페이징 모습이 "< 1 2 3 4 5 >" 인 경우 페이지 리스트 크기는 5</pre> |
 |page_contents_size|<pre>한 페이지에 들어가는 글 갯수</pre>||
