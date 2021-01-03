@@ -14,3 +14,9 @@
 
 사용법
 > PagingFrontUtil.java 의 getPagingVariable 함수의 리턴값을 paging_view.jsp 와 같이 뷰에 노출시켜주면 됩니다.
+>> https://github.com/skok1025/Board_Paging_Variable/blob/master/paging_view.jsp
+
+DB SELECT 쿼리 예시
+> <code>LIMIT #{page_contents_size} OFFSET #{start_content}</code>
+>> #{start_content} 인덱스부터 #{page_contents_size} 개의 정보를 가져온다. 
+>> https://github.com/skok1025/Board_Paging_Variable/blob/master/db_mybatis.xml
